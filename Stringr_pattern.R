@@ -14,6 +14,7 @@ str_view_all(s, pattern)
 library(stringr)
 s <- c("70","5 ft","4'11","",".","Six feet")
 pattern <- "\\d|feet"
+<<<<<<< HEAD
 str_view_all(s, pattern)
 library(stringr)
 animals <- c("cat", "puppy", "Moose", "MONKEY")
@@ -140,4 +141,7 @@ convert_format <- function(s){
   str_detect(converted, pattern)
   print(s)
   s
-  
+  library(stringr)
+  schedule <- data.frame("Mandy, Chris and Laura", "   Steve, Ruth and Frank")
+  str_split(schedule$staff, ",|and")
+  schedule
